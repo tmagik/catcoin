@@ -1,42 +1,49 @@
-Bitcoin Core integration/staging tree
+Catcoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/bitcoin/bitcoin.svg?branch=master)](https://travis-ci.org/bitcoin/bitcoin)
+[![Build Status](https://travis-ci.org/tmagik/catcoin.svg?branch=master)](https://travis-ci.org/tmagik/catcoin)
 
-https://www.bitcoin.org
+https://bitbucket.org/catcoin/catcoin
 
 Copyright (c) 2009-2014 Bitcoin Core Developers
+Copyright (c) 2013-2014 Catcoin Core by Catoshi and his developer Troy
 
-What is Bitcoin?
+NOT READY YET
+-------------
+This version of Catcoin is a forward-port of the Catcoin blockchain into the 
+mainline Bitcoin-core software from https://www.bitcoin.org
+
+What is Catcoin?
 ----------------
 
-Bitcoin is an experimental new digital currency that enables instant payments to
-anyone, anywhere in the world. Bitcoin uses peer-to-peer technology to operate
+Catcoin is an experimental new digital currency that enables instant payments to
+anyone, anywhere in the world. Catcoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Bitcoin Core is the name of open source
+out collectively by the network. Catcoin Core is the name of open source
 software which enables the use of this currency.
 
-For more information, as well as an immediately useable, binary version of
-the Bitcoin Core software, see https://www.bitcoin.org/en/download.
+If this sounds like Bitcoin, that's because we borrowed their code and made it
+friendlier for felines.
 
 License
 -------
 
-Bitcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Catcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see http://opensource.org/licenses/MIT.
 
 Development process
 -------------------
 
-Developers work in their own trees, then submit pull requests when they think
-their feature or bug fix is ready.
+Catcoin developers are much like cats. The are difficult or impossible to herd,
+and occasional have both short and long ongoing catfights. If you'd like
+something done for catcoin, we highly encourage you to do it yourself, or hire
+a developer (and pay them in catcoin, of course)
 
-If it is a simple/trivial/non-controversial change, then one of the Bitcoin
-development team members simply pulls it.
+If it is a *more complicated or potentially controversial* change, then be
+prepared for a catfight, and start a discussion on the 
+[issue tracker](https://bitbucket.org/catcoin/catcoin/issues), or bring it up
+on #catoshi-dev on the freenode IRC network.
 
-If it is a *more complicated or potentially controversial* change, then the patch
-submitter will be asked to start a discussion (if they haven't already) on the
-[mailing list](http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development).
 
 The patch will be accepted if there is broad consensus that it is a good thing.
 Developers should expect to rework and resubmit patches if the code doesn't
@@ -60,11 +67,10 @@ lots of money.
 Developers are strongly encouraged to write unit tests for new code, and to
 submit new unit tests for old code. Unit tests can be compiled and run (assuming they weren't disabled in configure) with: `make check`
 
-Every pull request is built for both Windows and Linux on a dedicated server,
-and unit and sanity tests are automatically run. The binaries produced may be
-used for manual QA testing — a link to them will appear in a comment on the
-pull request posted by [BitcoinPullTester](https://github.com/BitcoinPullTester). See https://github.com/TheBlueMatt/test-scripts
-for the build/test scripts.
+[Travis-ci](https://travis-ci.org/tmagik/catcoin/) is currently being .. um ..
+tested as an automated testing system. Further tests will be added if Catoshi
+feels like it to do usefull things like run a suite of tests to evaluate 
+different difficulty adjustment algorithms.
 
 ### Manual Quality Assurance (QA) Testing
 
