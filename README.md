@@ -54,6 +54,16 @@ The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/bitcoin/bitcoin/tags) are created
 regularly to indicate new official, stable release versions of Bitcoin.
 
+Building
+--------
+
+on debian:
+    sudo apt-get install mercurial build-essential libboost-dev libdb++-dev \
+        libssl-dev libminiupnpc-dev libboost-filesystem-dev \
+        libboost-system-dev libboost-program-options-dev \
+        libboost-thread-dev libboost-test-dev
+    ./autogen.sh && ./configure && make
+
 Testing
 -------
 
